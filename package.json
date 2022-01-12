@@ -1,0 +1,33 @@
+{
+  "name": "aparat-clone",
+  "homepage": "http://mahdi-shariflo.github.io/aparat-clone",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "predeploy": "next build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.5.0",
+    "global": "^4.4.0",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-player": "^2.9.0",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
+    "yarn": "^1.22.15"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "gh-pages": "^3.2.3",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15"
+  }
+}

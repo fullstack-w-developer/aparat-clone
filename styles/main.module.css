@@ -1,0 +1,201 @@
+.Banner__main {
+  height: 90px;
+  border-radius: 6px;
+  position: relative;
+  background-image: url("https://www.pngitem.com/pimgs/m/107-1074116_spongebob-squarepants-png-background-image-bob-esponja-saltando.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.times__banner {
+  position: absolute;
+  left: 6px;
+  top: 0px;
+  cursor: pointer;
+}
+
+.logo__containerLight {
+  padding-top: 1rem;
+  padding-right: 0.95rem;
+}
+.logo__containerNight {
+  padding-top: 1rem;
+  padding-right: 0.95rem;
+}
+
+.logo__containerLight::after {
+  content: "";
+  padding-top: 1rem;
+  margin: 0 0.75rem;
+  border: 1px solid rgb(173, 171, 171);
+}
+.logo__containerNight::after {
+  content: "";
+  padding-top: 1rem;
+  margin: 0 0.75rem;
+  border: 1px solid black;
+}
+
+.text__banner {
+  font-size: 0.75rem;
+  font-family: "vazir";
+}
+
+.link__page {
+  font-size: 0.75rem;
+  font-family: "vazir";
+  background-color: #ed145b;
+  padding: 0.35rem;
+  border-radius: 10px;
+}
+
+.card__amount {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(252, 252, 252);
+  padding: 0.55rem;
+  border-radius: 10px;
+  font-family: "vazir";
+}
+
+/* view film */
+.video__preview {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.title__videos {
+  position: absolute;
+  top: -2.3rem;
+  font-family: "vazir";
+  font-size: 0.95rem;
+}
+.chanel__name {
+  font-family: "vazir";
+  font-size: 0.75rem;
+  padding: 0.85rem 0;
+}
+.title__video {
+  font-family: "vazir";
+  font-size: 0.75rem;
+  padding-top: 0.95rem;
+}
+.details__video {
+  font-family: "vazir";
+  font-size: 0.65rem;
+}
+
+.banner__style_isPushMenu {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.film__container__main__isPushMenu {
+  display: grid;
+  grid-template-columns: 19.6% 19.6% 19.6% 19.6% 19.6%;
+  grid-gap: 35px 5px;
+  margin-top: 5.5rem;
+  padding-bottom: 1.2rem;
+}
+.film__container__main__notPushMenu {
+  display: grid;
+  grid-template-columns: 16.4% 16.4% 16.4% 16.4% 16.4% 16.4%;
+  grid-gap: 35px 5px;
+  margin-top: 5.5rem;
+  padding-bottom: 1.2rem;
+}
+
+@media all and (max-width: 1330px) {
+  .film__container__main__isPushMenu {
+    grid-template-columns: 24.7% 24.7% 24.7% 24.7%;
+    justify-content: center;
+  }
+  .banner__style_isPushMenu{
+      grid-template-columns: 96%;
+      justify-content: center;
+  }
+  .film__container__main__notPushMenu{
+      grid-template-columns: 19.5% 19.5% 19.5% 19.5% 19.5%;
+      justify-content: center;
+  }
+  .banner__style_notPushMenu{
+      display: grid;
+    grid-template-columns: 87%;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width:1124px){
+    .film__container__main__notPushMenu{
+        grid-template-columns: 24.7% 24.7% 24.7% 24.7%;
+        justify-content: center;
+    }
+    .banner__style_notPushMenu{
+        display: grid;
+        grid-template-columns: 96%;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width:965px){
+    .film__container__main__isPushMenu{
+        grid-template-columns: 32.5% 32.5% 32.5%;
+        justify-content: center;
+    }
+    .banner__style_notPushMenu{
+        grid-template-columns: 80%;
+        justify-content: center;
+    }
+    .banner__style_isPushMenu{
+        grid-template-columns: 80%;
+        justify-content: center;
+    }
+    .film__container__main__notPushMenu{
+        grid-template-columns: 32.5% 32.5% 32.5%;
+        justify-content: center;
+    }
+}
+
+
+@media all and (max-width:715px){
+    .film__container__main__isPushMenu{
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+    }
+    .banner__style_notPushMenu{
+        grid-template-columns: 90%;
+        justify-content: center;
+    }
+    .banner__style_isPushMenu{
+        grid-template-columns: 90%;
+        justify-content: center;
+    }
+    .film__container__main__notPushMenu{
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+    }
+}
+
+
+@media all and (max-width:630px){
+    .film__container__main__isPushMenu{
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+    .banner__style_notPushMenu{
+        grid-template-columns: 90%;
+        justify-content: center;
+    }
+    .banner__style_isPushMenu{
+        grid-template-columns: 90%;
+        justify-content: center;
+    }
+    .film__container__main__notPushMenu{
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+}
+
